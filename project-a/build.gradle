@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id "org.sonarqube" version "5.0.0.4638"
 }
 
 sourceCompatibility = 1.8
@@ -21,4 +22,12 @@ dependencies {
     // otherwise the dependent project will be built and that version will
     // be used.
     implementation 'example.gcb.gregwhitaker:project-b'
+}
+
+
+sonar {
+  properties {
+    property "sonar.projectKey", "imayou123_gradle-monorepo_projectA"
+    property "sonar.projectName", "imayou123_gradle-monorepo_projectA"
+  }
 }
