@@ -39,7 +39,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_1 }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: ./gradlew build sonar -Dsonar.projectBaseDir=project-a --info # the path to your project from the monorepo root directory  
+        run: gradle build sonar -Dsonar.projectBaseDir=project-a --info # the path to your project from the monorepo root directory  
   sonarQubeScan2:
     name: sonarQubeScan2
     runs-on: ubuntu-latest
