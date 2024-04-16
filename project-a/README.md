@@ -1,5 +1,5 @@
 # project-a
-
+TEST
 Example project that depends on [project-b](../project-b).
 
 The dependency on project-b is declared in the [settings.gradle](settings.gradle) file using the `includeBuild` directive.
